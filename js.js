@@ -1,34 +1,53 @@
-console.log("Machin de Mah ry hon")
+
 
  let field = document.getElementById("app-field");
  let btn = document.getElementById("app-btn");
- let listItems = document.getElementById("app-listItems")
+ let listItems = document.getElementById("app-listItems");
+ let today_container = document.getElementsByClassName("today");
+
 // On gère l'event clic
 btn.addEventListener("click", ()=> {
+    var option_value =
+document.querySelector('#text'); 
+console.log(option_value);
+var value_option =
+option_value.options[option_value.selectedIndex].value;
+console.log(value_option);
+
+console.log(today_container);
     //on récupère le text de l'input
     //on récupère la valeur de l'input
     let text = field.value;
-    console.log(text);
+    // console.log(text);
 
 
 
 //apres il faut penser à utiliser .createElement()
 
-
-    if (text === "") {
+    
+    if (value_option === "today") {
+            let newLi = document.createElement("li");
+            // console.log(newLi)
+            newLi.textContent = text;
+            console.log(newLi);
+            today_container.innerHTML = newLi;
+        //on ajoute le nouvel Li à la list
+            // console.log(today_container);
+        // On veut supprimer le text de l'input
+            field.value = "";
+            }
         }
-    else {
-        let newLi = document.createElement("li");
-        console.log(newLi);
-        newLi.textContent = text;
-        console.log(newLi);
-    //on ajoute le nouvel Li à la list
-        listItems.appendChild(newLi);
-    // On veut supprimer le ttext de l'input
-        field.value = "";
-        }
+   
+    
     //on crée un Li avec le bon contenu
-    })
+    )
+
+
+
+
+
+
+
 
 let cat_field = document.getElementById("cat-field");
 let cat_btn = document.getElementById("car-btn");
@@ -38,7 +57,7 @@ btn.addEventListener("click", ()=> {
        //on récupère le text de l'input
        //on récupère la valeur de l'input
     let text1 = field.value;
-    console.log(text1);
+    // console.log(text1);
 })
 
 
@@ -74,6 +93,23 @@ btn.addEventListener("click", ()=> {
 // }
 
 // React.render(<App />, document.getElementById('container'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

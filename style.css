@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(275deg, #af86f1 28%, #80bef0 75%);
 }
 
+/* Titre du site */
 h1 {
     color: rgb(255, 254, 253);
     font-size: 50px;
@@ -12,6 +13,7 @@ h1 {
     text-align: center;
 }
 
+/* Boutons */
 #app-field {
     width: 15%;
     padding: 7px 7px;
@@ -32,12 +34,12 @@ h1 {
 }
 
 #app-btn {
-    background-image: linear-gradient(to right, #e122e7 0%, #258ce0  51%, #cb17db  100%);
+    background-image: linear-gradient(to right, #b029ff 0%, #258ce0  51%, #cb17db  100%);
     margin: 10px;
     padding: 7px 25px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 1s;
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 10px rgb(244, 243, 245);
@@ -46,9 +48,117 @@ h1 {
   }
 
 #app-btn:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; 
     color: #fff;
     text-decoration: none;
   }
+
+section {
+    text-align: center;
  
+}
+
+/* Cards */
+.row {
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.today, .this-week, .this-month{
+    float: left;
+    width:32%;
+    padding:10px;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#text:focus {
+    outline: none;
+}
+
+h3 {
+    background-color: #c9abf8;
+    color: #fff;
+
+}
+
+.card {
+    padding: 5px 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 27rem;
+    height: 43rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+   /* Dropdown Button */
+.dropbtn {
+    background-color: #b029ff;
+    margin: 10px;
+    padding: 7px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px rgb(244, 243, 245);
+    border-radius: 10px;
+    border: white;
+  }
   
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bde9ff;
+    min-width: 120px;
+    z-index: 1;
+    text-align: left;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+select {
+    background-image: linear-gradient(to right, #b029ff 0%, #258ce0  51%, #cb17db  100%);
+    margin: 10px;
+    padding: 7px 25px;
+    text-align:left;
+    text-transform: uppercase;
+    transition: 1s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 10px rgb(244, 243, 245);
+    border-radius: 10px;
+    border: white;
+    background-color: #80bef0;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
