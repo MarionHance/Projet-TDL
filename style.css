@@ -84,14 +84,16 @@ h3 {
 
 }
 
-.card {
+.card_1 , .card_2, .card_3 {
     padding: 5px 1rem;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     width: 27rem;
     height: 43rem;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align:center;
+    
+    
 }
 
 
@@ -142,14 +144,21 @@ select {
     padding: 7px 25px;
     text-align:left;
     text-transform: uppercase;
-    transition: 1s;
     background-size: 200% auto;           
     box-shadow: 0 0 10px rgb(244, 243, 245);
     border-radius: 10px;
     border: white;
     background-color: #80bef0;
     color: white;
+    list-style:none;
     
+}
+
+li {
+    border-bottom: #a6bee7 5px solid;
+    margin: 10px;
+    list-style-type:none;
+
 }
 
 

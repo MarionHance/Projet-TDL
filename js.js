@@ -1,110 +1,100 @@
 
 
- let field = document.getElementById("app-field");
- let btn = document.getElementById("app-btn");
- let listItems = document.getElementById("app-listItems");
- let today_container = document.getElementsByClassName("today");
+  let field = document.getElementById("app-field");
+  let btn = document.getElementById("app-btn");
+  let listItems = document.getElementById("app-listItems");
+  let today_container = document.querySelector(".card_1");
+  let this_week_container = document.querySelector(".card_2");
+  let this_month_container = document.querySelector(".card_3");
+ 
+ // On gère l'event clic
+ btn.addEventListener("click", ()=> {
+     var option_value =
+ document.querySelector('#text'); 
+ console.log(option_value);
+ var value_option =
+ option_value.options[option_value.selectedIndex].value;
+ console.log(value_option);
 
-// On gère l'event clic
-btn.addEventListener("click", ()=> {
-    var option_value =
-document.querySelector('#text'); 
-console.log(option_value);
-var value_option =
-option_value.options[option_value.selectedIndex].value;
-console.log(value_option);
+ 
+     //on récupère le text de l'input
+     //on récupère la valeur de l'input
+     let text = field.value;
+     // console.log(text);
+ 
 
-console.log(today_container);
-    //on récupère le text de l'input
-    //on récupère la valeur de l'input
-    let text = field.value;
-    // console.log(text);
-
-
-
-//apres il faut penser à utiliser .createElement()
-
-    
+ 
+ //apres il faut penser à utiliser .createElement()
+ 
+     
     if (value_option === "today") {
-            let newLi = document.createElement("li");
-            // console.log(newLi)
-            newLi.textContent = text;
-            console.log(newLi);
-            today_container.innerHTML = newLi;
-        //on ajoute le nouvel Li à la list
-            // console.log(today_container);
-        // On veut supprimer le text de l'input
-            field.value = "";
-            }
+        let newLi = document.createElement("li");
+     //input (text)
+ 
+        newLi.textContent = text;
+     //console.log(newLi);
+     
+     //Add new elements
+     
+             // console.log(newLi)
+        newLi.textContent = text;
+             // console.log(newLi);
+ 
+             //on ajoute le nouvel Li à la list
+        today_container.appendChild(newLi);
+         // On veut supprimer le text de l'input
+        field.value = "";
         }
-   
-    
-    //on crée un Li avec le bon contenu
+
+    if (value_option === "this_week") {
+        let newLi = document.createElement("li");
+            //input (text)
+        
+        newLi.textContent = text;
+            //console.log(newLi);
+            
+            //Add new elements
+            
+                    // console.log(newLi)
+        newLi.textContent = text;
+                    // console.log(newLi);
+        
+                    //on ajoute le nouvel Li à la list
+        this_week_container.appendChild(newLi);
+                // On veut supprimer le text de l'input
+        field.value = "";
+        }
+
+    if (value_option === "this_month") {
+        let newLi = document.createElement("li");
+                    //input (text)
+                
+        newLi.textContent = text;
+                    //console.log(newLi);
+                    
+                    //Add new elements
+                    
+                            // console.log(newLi)
+        newLi.textContent = text;
+                            // console.log(newLi);
+                
+                            //on ajoute le nouvel Li à la list
+        this_month_container.appendChild(newLi);
+                        // On veut supprimer le text de l'input
+        field.value = "";
+        }
+
+
+        }
+       
     )
 
-
-
-
-
-
-
-
-let cat_field = document.getElementById("cat-field");
-let cat_btn = document.getElementById("car-btn");
-let cat_listItems = document.getElementById("cat-listItems")
-   // On gère l'event clic
-btn.addEventListener("click", ()=> {
-       //on récupère le text de l'input
-       //on récupère la valeur de l'input
-    let text1 = field.value;
-    // console.log(text1);
-})
-
-
-
-// render() { 
-//     return (
-//       <div className="container">
-//         <div className="container">
-//           <Card body="Card 3" />
-//           <Card body="Card 4" />
-//         </div>
-//       </div>
-//     );
-// }
-
-// class Card extends React.Component {
-//   constructor (props) {
-//     super(props);
-//   }
-  
-//   render () {
-//     return (
-//       <div className="card">
-//         <div className="card-header">
-//           <h3>Example Card</h3>
-//         </div>
-//         <div className="card-body">
-//           <p>{this.props.body}</p>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// React.render(<App />, document.getElementById('container'));
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
